@@ -8,7 +8,7 @@ DMOZ, formerly the Open Directory Project, is shutting down on March 14, 2017. T
 
 ### How?
 
-Into this repository there is dumped archive of Fortran section: you can browse its sources [here](https://github.com/szaghi/dmoz-fortran-archive/www.dmoz-org). Exploting the GitHub pages you can also browse the rendered pages served at the following link
+Into this repository there is dumped archive of Fortran section: you can browse its sources [here](https://github.com/szaghi/dmoz-fortran-archive/tree/master/www.dmoz.org). Exploting the GitHub pages you can also browse the rendered pages served at the following link
 
 #### https://szaghi.github.io/dmoz-fortran-archive/
 
