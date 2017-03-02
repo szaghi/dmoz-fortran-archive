@@ -1,0 +1,588 @@
+/* CSS for DMOZ Categories */
+
+/*************** Full screen ***************/
+
+    section.search-and-social {
+        padding-bottom: 1px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #node-search-viewer {
+        padding-bottom: 13px;
+    }
+
+    /* Specify number and width of category columns */
+
+    div.cat-list.leaf-nodes, div.alt-language-content.leaf-nodes  {
+        -webkit-column-gap: 1em;
+           -moz-column-gap: 1em;
+                column-gap: 1em;
+    }
+
+    div.cat-list.leaf-nodes, div.alt-language-content.leaf-nodes {
+      -webkit-column-count: 4;
+         -moz-column-count: 4;
+              column-count: 4;
+      -webkit-column-width: 23%;
+         -moz-column-width: 23%;
+              column-width: 23%;
+    }
+
+
+
+/*************** Search ***************/
+
+
+/*************** Current Category ***************/
+
+#description-block {
+    display: none;
+    margin: 0 20px;
+    background: #F4F4F4;
+    padding: 15px;
+}
+
+#description-close {
+    float: right;
+    position: relative;
+    top: -12px;
+    right: -12px;
+    font-size: 1.2em;
+}
+
+#description-close:hover {
+    cursor: pointer;
+}
+
+
+/*************** Nodes ***************/
+
+/* 3 columns of categories */
+
+section.cats       { width: auto; padding: 20px 0px 20px 2%; }
+section.cats aside { width: auto; min-width: 32%; float: left; text-align: left; }
+
+section.cats aside:hover {
+    background-color: white;
+}
+
+section.cats .category {
+    margin: 5px;
+    padding: 13px 0px 13px 100px;
+}
+
+section.cats aside a:visited { color: #888;  }
+section.cats aside a         { color: black; }
+section.cats aside a:hover   { color: black; }
+
+aside.arts:hover a { color: rgba(135, 25, 45, 1.0); }
+
+#home-cat-arts,
+#home-cat-business,
+#home-cat-computers,
+#home-cat-games,
+#home-cat-health,
+#home-cat-home,
+#home-cat-kids_and_teens,
+#home-cat-news,
+#home-cat-recreation,
+#home-cat-reference,
+#home-cat-regional,
+#home-cat-science,
+#home-cat-shopping,
+#home-cat-society,
+#home-cat-sports,
+#home-cat-world,
+{
+    margin: 5px;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: 20px 12px;
+    padding: 13px 0px 13px 100px;
+}
+
+/***** Row of category icons at the bottom of the page *****/
+
+section.thundercats {
+   border-top: 1px solid #eee;
+   padding: 12px 0;
+}
+section.thundercats.treeviewer {
+   border-bottom: 1px solid #eee;
+}
+div.thundercats {
+   width: 80%;
+   margin: 0px auto;
+   padding: 10px;
+}
+section.thundercats div.category {
+   display: inline-block;
+   height: 40px;
+}
+section.thundercats div.category:hover {
+   cursor: pointer;
+}
+
+div.cat-list:not(#cat-list-content-main) {
+   padding-top: 5px;
+}
+
+div.cat-list,div.see-also { margin-left: 0px; }
+
+div.cat-label {
+   visibility: hidden;
+   opacity: 0;
+}
+
+#home-cat-kids_and_teens { }
+
+
+/*************** See Also ***************/
+
+#see-also-content { width: 100%; }
+
+/* a.see-also:hover { background: #eee; } */
+
+a.search-cat { float: right; margin: 0px 14px; }
+
+div.see-also-row { margin: 2px 0; }
+
+section.thundercats div.category:hover div.cat-label {
+   visibility: visible;
+   text-align: center;
+   margin-top: 4px;
+   line-height: 1em;
+   height:     2em;
+   font-weight: 700;
+   opacity: 1;
+   color: #000;
+}
+
+
+/***********************************************************/
+   
+/* slow transition to the hover size (larger) */
+#home-cat-arts:hover,
+#home-cat-business:hover,
+#home-cat-computers:hover,
+#home-cat-games:hover,
+#home-cat-health:hover,
+#home-cat-home:hover,
+#home-cat-kids_and_teens:hover,
+#home-cat-news:hover,
+#home-cat-recreation:hover,
+#home-cat-reference:hover,
+#home-cat-regional:hover,
+#home-cat-science:hover,
+#home-cat-shopping:hover,
+#home-cat-society:hover,
+#home-cat-sports:hover,
+#home-cat-world:hover
+{
+    background-size: 60px 60px;
+    transition: background-size .3s;
+    margin: 5px;
+    background-position: 20px 12px;
+    padding: 13px 0px 13px 100px;
+}
+
+section.cats aside .category       { border-radius: 10px; }
+section.cats aside .category:hover { cursor: pointer; }
+
+
+div.cat-icon {
+   margin: 2.3em 8px 1em 12px;
+   width: 7em; height: 6em;
+   background: url(https://www.dmoz.org/img/category-icons/world.svg) no-repeat 0 0;
+   background-size: contain;
+   float: left;
+   opacity: 0.8;
+}
+
+.cat-path:first-of-type {
+  display: none;
+}
+
+section.results.desc-and-faq {
+   border-top: 1px solid #ddd;
+   padding-bottom: 0px;
+}
+
+section.results:not(.children)       { padding-bottom: 30px; }
+section.results.alphabar             { padding: 25px 5px; text-align: center; }
+section.results.desc-and-faq         { padding-bottom: 15px; }
+section.results.categories           { padding-bottom: 10px; }
+section.results.editors-and-mozzie   { padding-bottom:  5px; }
+section.results.alt-search           { padding: 10px; font-size: 0.9em;  background-color: rgb(250,250,250); }
+
+#cat-list-section-main,
+#cat-list-section-2,
+#cat-list-section-3                  { padding-bottom: 20px; }
+.section-wrapper                     { padding-bottom: 30px; margin: 0 20px; }
+
+section.editors-and-mozzie  { padding-bottom: 0px; }
+section.results .fa         { margin: 0 .4em; font-size: .8em; }
+.fa-chevron-right           { margin: 0.6em;  opacity: 0.6; }
+section.results h3 .fa      { font-size: 1.3em; position: relative; top: 2px; }
+section.results li          { width: 96%; }
+
+h3.node-header i.fa { margin: 0; }
+
+div.current-cat {
+  padding: 8px;
+  padding-left: 4em;
+  font-size: 1.6em;
+}
+
+div.node-range {
+    display: inline;
+    float: right;
+    margin-right: 1em;
+}
+
+div.node-count {
+    font-size: 0.8em;
+/*  display: inline-block;  we're going to only show these to logged in editors */
+    display: none;
+    text-align: right;
+    padding: 0 1em;
+    border-radius: 10px;
+    margin-top: 2px;
+}
+
+h3 div.node-count {
+    display: inline-block;
+    margin: 0 14px;
+    border-radius: 0px;
+    position: relative;
+/*    padding: 0 0.6em; */
+}
+
+div.current-cat .node-count {
+    margin-left: 5px;
+}
+
+.browse-node .node-count {
+    float: right;
+}
+
+/**** One category path spanning the full width ****/
+
+.table { display: table; }
+.row   { display: table-row; width: 100%; }
+.cell  { display: table-cell; }
+.one-node-count   { float: right; margin-right: 8px; position: relative; top: 7px; }
+.one-cat-item     { padding: 2px 0; }
+.title-and-desc   { vertical-align: top; }
+.title-and-desc a { padding-left: 3px; }
+
+.site-item.bookmark-mozzie  { min-height: 70px; }
+img.bookmark-mozzie         { width: 80px; padding-right: 15px; }
+.site-descr.bookmark-mozzie { padding-left: 80px; font-size: 0.9em; }
+
+.one-folder-icon { padding-left: 9px; width: 24px; }
+.one-browse-node { padding: 0 0 0 3px; }
+.one-node-count  { padding-left: 10px; padding-right: 13px; }
+.all-node-counts { font-size: 0.8em; background: none; border-radius: 5px; }
+.count-container { padding: 0 8px; }
+
+div.full-cat-path { padding: 2px 10px; }
+div.full-cat-path div.folder-icon,
+div.full-cat-path div.cat-path     { display: inline-block; }
+
+div.one-browse-node .fa, div.one-cat-item .fa:not(.catIcon) { 
+    font-size: 0.7em;
+    opacity:  0.3;
+    color:    #888;
+}
+
+i.catIcon, i.siteIcon, h3 i { color: #222; margin: 0 0.4em; }
+i.siteIcon { position: relative; bottom: 2px; }
+h3 i.fa    { font-size: 1.3em; }
+
+div.search-content i.siteIcon { bottom: -5px; }
+
+dd i.docsIcon { padding-right: 10px; }
+
+div.node-count .fa {
+  font-weight: bold;
+  position: relative;
+  right: 8px;
+  bottom: 2px;
+}
+
+div.current-cat                    { padding-bottom: 30px; }
+div.current-cat .fa                { color: #ccc; }
+div.current-cat .fa.volunteer-this { color: inherit; }
+div.current-cat .fa.suggest-url    { color: inherit; }
+div.current-cat .fa.edit-category  { color: inherit; }
+div.current-cat .fa.report-abuse   { color: inherit; }
+div.current-cat .fa.tree-url       { color: inherit; }
+
+div.desc-link,div.faq-link {
+  float: right;
+  clear: right;
+  font-size: 2em;
+}
+
+div.faq-link {
+  position: relative;
+  top: -20px;         // bring it up closer to the description icon
+}
+
+div.cat-item {
+  padding-left:   9px;
+  border-right:   1px solid #eee;
+}
+
+i.section-closed { display: none; }
+
+/* by default, don't show the alternate language list */
+.alt-language-content          { display: none; }
+.alt-language i.section-open   { display: none; }
+.alt-language i.section-closed { display: inline; }
+
+
+/*************** Category Description ***************/
+
+div.desc-body { padding-bottom: 1em; }
+
+div.child-description {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid #eee;
+}
+
+section.description {
+  border-bottom: 1px solid #ddd;
+}
+
+div.description div.related-cats {
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+div.description div.related-cat {
+  padding: 2px 10px;
+}
+
+div.related-cats span.header-text {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+div.submission-notices {
+  padding: 20px;
+  margin: 10px;
+  background: #eee;
+}
+
+div.category-guidelines .header  { font-weight: bold; }
+div.category-guidelines .body    { padding: 10px; }
+
+/*************** Sites ***************/
+
+div.cat-item:hover, div.site-item:hover { border-top-left-radius:  10px; border-top-right-radius: 10px; }
+
+
+/*************** Mozzie and Editors  ***************/
+
+div.edit-block          { display: block; }
+div.editor-header       { display: inline-block; font-weight: 600; padding-left: 5px; }
+div.last-update-section { display: inline-block; font-weight: 600; padding-left: 5px; }
+div.edit-header         { padding: 10px 0px; }
+div.edit-block i        { position: relative; bottom: 2px; }
+
+div.last-update, div.cat-editors {
+  padding: 10px;
+  text-align: left;
+  font-size: 1.0em;
+}
+
+div.cat-editors { padding-top: 15px; }
+
+div.cat-editors a.editors :first-of-type { padding-left: 15px; }
+div.cat-editors a.editors                { padding-left: 5px; }
+
+div.volunteer a { padding-right: 5px; }
+
+div.cat-editors a               { font-size: 0.9em; font-weight: 600; font-style: italic; }
+span.last-update                { font-size: 0.9em; padding-left: 25px; }
+
+div.custom-mozzie {
+  margin:  5px;  margin-bottom:  0px;
+  padding: 5px 25px 0px 25px;
+  float: left;
+}
+
+div.browse-node {
+    margin: 0px;
+}
+
+
+/*************** Large screens ***************/
+
+@media screen and (max-width: 1260px) {
+
+    /* 3 columns of categories */
+    section.cats       { margin: 0 auto; padding: 25px 0px; width: 90%; }
+    section.cats aside { width: 47%; margin: 0px 10px; }
+
+    div.cat-list.leaf-nodes, div.alt-language-content.leaf-nodes {
+      -webkit-column-count: 3;
+         -moz-column-count: 3;
+              column-count: 3;
+      -webkit-column-width: 30%;
+         -moz-column-width: 30%;
+              column-width: 30%;
+    }
+
+    #extra-world-languages { display: none; }
+}
+
+
+/*************** Medium screens ***************/
+
+@media screen and (max-width: 900px) {
+    
+    section.cats       { margin: auto; padding: 20px 0px 0px 2%; width: 94%; }
+
+    /* 2 columns of categories */
+    section.cats aside { width: 45%; min-height: 10em; }
+
+    div.cat-list.leaf-nodes, div.alt-language-content.leaf-nodes {
+      -webkit-column-count: 2;
+         -moz-column-count: 2;
+              column-count: 2;
+      -webkit-column-width: 45%;
+         -moz-column-width: 45%;
+              column-width: 45%;
+    }
+
+    .node-select {
+        margin: 10px auto;
+        width: 72%;
+        margin-bottom: 0px;
+    }
+
+    div.cat-icon {
+       width: 5.0em; height: 5.0em;
+    }
+
+    div.current-cat {
+       font-size: 1.4em;
+    }
+}
+
+/*************** Small screens ***************/
+
+@media screen and (max-width: 625px) {
+
+    /* 1 column of categories */
+    section.cats       { margin-left: 0px; margin-right: 0px; padding: 20px 0 20px 6%; }
+    section.cats aside { width: 90%; min-height: 0; }
+
+    .section-wrapper   { padding-bottom: 10px; margin: 0px; }
+    #related-section   { padding-right: 10px; }
+    #subcategories-div { padding-right: 10px; }
+
+    div.cat-list.leaf-nodes, div.alt-language-content.leaf-nodes {
+      -webkit-column-count: 1;
+         -moz-column-count: 1;
+              column-count: 1;
+      -webkit-column-width: 80%;
+         -moz-column-width: 80%;
+              column-width: 80%;
+    }
+
+    section.cats aside div.category { 
+        margin: 8px 10px;
+        padding: 5px 0px 10px 55px;
+        background-size: 40px 40px;
+        background-position: 0px 12px;
+    }
+    
+    section.cats .category:hover {
+        margin-top: 5px;
+        background-size: 48px 48px;
+        transition: background-size .3s;
+    }
+    
+    div.cat-item  { padding:  7px 0 7px 9px; }
+
+ /* div.cat-item:first-of-type { border-top: 1px solid #eee; } */
+
+    div.cat-icon {
+       width: 3em; height: 5em;
+    }
+
+    div.current-cat { padding-bottom: 0px; }
+    div.current-cat .fa.volunteer { font-size: 1em; }
+
+    section.cats .sub-cat { display: inherit; } 
+
+    h3 div.node-count { bottom: -2px; }
+
+    #node-search      { padding-bottom: 1px; }
+    #node-search-home { padding-bottom: 1px; }
+
+    .node-select { margin-bottom: 10px; }
+
+    h3 div.node-count { float: right; }
+
+    /* div.browse-node { font-size: 1.2em; } */
+
+    h3 i { color: inherit; }
+
+    div.see-also-row { margin: 10px 0; }
+
+    div.full-cat-path { padding: 8px 10px; }
+
+    section.thundercats div.category {
+       height: 30px;
+    }
+
+    div.thundercats {
+       width: 100%;
+       margin: 0px auto;
+       padding: 10px 0px;
+       background-color: white;
+    }
+
+    section.thundercats div.category:hover div.cat-label {
+       margin-top: 5px;
+       font-size: 0.9em;
+       line-height: 0.9em;
+    }
+
+    div.custom-mozzie {
+        padding: 5px 10px 0px 10px;
+    }
+
+    div.custom-mozzie { min-height: 150px; }
+
+    div.custom-mozzie img {
+        max-width:150px;
+        max-height:200px;
+        width: auto;
+        height: auto;
+    }
+
+    div.cat-editors a.editors :first-of-type { padding-left: 2px;  font-size: 0.9em; }
+    span.last-update                         { padding-left: 2px;  font-size: 0.9em; }
+
+    img.bookmark-mozzie { padding-left: 15px; }
+    .site-descr.bookmark-mozzie { display: none; }
+
+    #search-site-div i.siteIcon { bottom: 0px; }
+}
+
+
+/*************** Even smaller screens ***************/
+
+@media screen and (max-width: 360px) {
+
+    section.cats       { padding-left: 4%; }
+}
+
+

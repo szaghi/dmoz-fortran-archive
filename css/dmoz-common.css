@@ -1,0 +1,747 @@
+/* CSS to be used by all pages.  @import must be first!  */
+
+@import url(https://fonts.googleapis.com/css?family=Hind:600,400);
+
+
+/***********************************************************************/
+/* Specify all colors that aren't just shades of gray here             */
+/* This file contains the DMOZ default color                           */
+/* Each category has its own custom colors defined in its own file     */
+
+
+a.btn,
+div.separator,
+section.search-and-social,
+div.section-divider           { background-color: hsla(120,100%, 25%, 1.0); }
+
+section.results               { border-top:       1px solid #eee; }
+h3.node-header                { border-bottom:    1px solid #eee; }
+
+div.cat-item:hover, 
+div.site-item:hover           { background-color: hsla(120, 100%, 25%, 0.05); }
+
+.slick-prev:before,
+.slick-next:before,
+a, a:visited, li.social-link  { color:            hsla(120,100%, 25%, 1.0); }
+section.cats aside:hover      { background-color: hsla(120,100%, 25%, 0.2); }
+hr                            { border-color:     hsla(120,100%, 25%, 0.2); }
+header a.logo                 { background:       hsla(120,100%, 25%, 1.0)     url(../img/DMOZ-logo.svg) no-repeat 0 0;
+                                background-size:  contain; }
+
+section.alt-search            { border-bottom: 1px solid hsla(120,100%, 25%, 0.1); }
+div.site-item                 { border-top:    1px solid hsla(120,100%, 25%, 0.1); }
+div.site-item:first-of-type   { border-top: none; }
+
+a:hover, li.social-link:hover { color: #222; font-weight: 600; text-decoration: none !important; }
+div.separator                 { background: hsla(120,100%, 25%, 1.0); }
+
+div.current-cat {
+   background: url(https://www.dmoz.org/img/category-icons/world.svg) no-repeat 0 0;
+   background-size: 3em 3em;
+   background-position: 0.5em 0.5em;
+   min-height: 3.3em;
+   font-weight: 600;
+}
+
+
+/***********************************************************************/
+
+/* html { max-width: 1200px; margin: 0 auto; } */
+
+body {  font-family: 'Hind', sans-serif; font-size: 16px; font-weight: 400;
+        color: #333; margin: 0; padding: 0; }
+
+#page { width: 100%; margin: 0 auto; position: relative; }
+
+a  { text-decoration: none; }
+
+a.table-of-contents { margin: 0 10px; }
+
+.padded { padding: 20px; }
+
+table            { table-layout: fixed; width: 100%; }
+td               { word-wrap: break-word; }
+td div.faq-num   { display: inline-block; width: 25px; text-align: left; }
+
+div.feedback-block,
+table.table-form { border: 1px solid #888; padding: 10px; margin 10px; }
+div.td-label { float: left; margin-right: 20px; }
+div.td-input { display: inline-block; }
+div.td-descr { float: left; font-size: 0.9em; margin: 10px; clear: both; }
+
+div.fail-label { color: red; }
+
+.themed-background { border: 1px solid #aaa; }
+
+div.suggestion-block {
+    padding: 20px;
+}
+
+div.info-block {
+    background-color: #eec;
+    border: 1px solid #aaa;
+    margin: 1em 0;
+    clear: both;
+    padding: 0.5em 1.2em;
+}
+
+div.info-item {
+    padding: 10px 0;
+}
+
+div.important-info {
+    font-weight: bold;
+}
+
+.wordwrap {
+    /* wrap long text and urls */
+    white-space: pre;            /* CSS 2.0 */
+    white-space: pre-wrap;       /* CSS 2.1 */
+    white-space: pre-line;       /* CSS 3.0 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    white-space: -moz-pre-wrap;  /* Mozilla */
+    word-wrap:   break-word;     /* IE 5+ */
+}
+
+.header-margin.no-search { margin-top: 84px; }
+
+.mobile-only { display: none; }
+
+/* Use this to debug issues with margins, padding, ... */
+/*div { border: 1px solid red; }*/
+
+/* Text */
+
+h1 { margin: 0 0   1em 0; font-size: 2.0em; font-weight: 600; }
+h2 { margin: 0 0  .2em 0; font-size: 1.3em; font-weight: 600; line-height: 1em; }
+h3 { margin: 0 0  .2em 0; font-size: 1.1em; font-weight: 400; }
+h4 { margin: 0 0  .5em 0; font-size: 1.0em; font-weight: 400; }
+
+/* aside h2 { text-decoration: underline; } */
+aside h3 a:hover { font-weight: normal; text-decoration: underline; }
+
+.d-outer  { background-color: lightblue; padding: 3px; }
+.d-inner  { background-color: lightblue; border: 2px solid white; padding: 2px; }
+
+div.have-read { padding: 1em 0;  font-weight: 600; }
+
+label { font-weight: 600; }
+
+span.subtext { font-size: 0.8em; }
+
+p { margin: 0 0 1em 0; }
+
+hr { width: 85%; }
+
+/* Alphabar */
+
+span.start  { margin-right: 4px;   }
+span.pipe   { margin:       0 6px; }
+span.end    { margin-left:  4px;   }
+
+div.alphanumeric span.links   { font-size: 1.5em; display: inline-block; width: 0.8em; }
+div.alphanumeric span.current { font-size: 1.8em; margin-right: 0.5em; font-weight: 600; color: #999; }
+
+/******************/
+
+.error-block{
+    background-color: #F8F8BA;
+    border: 1px solid red;
+    color: red;
+    margin: 1em 0;
+    padding: 1em;
+}
+
+a.btn       { 
+    font-size: 1.2em; 
+    text-decoration: none; 
+    color: white;
+    transition: color .3s;
+    transition: background-color .3s;
+    border: 1px solid white; 
+    padding: 1px 15px; 
+}
+
+a.btn:hover { 
+    color: white;                       transition: color .3s; 
+    background-color: rgba(0,0,0,0.4);  transition: background-color .3s; 
+}
+
+select {
+    font-size: 1.1em;
+    margin: 5px;
+    border: 2px solid #ccc;
+}
+
+select:focus {
+    outline: none !important;
+    border: 2px solid #eee;
+    box-shadow: 2 2 10px #ddd;
+}
+
+select.node-select {
+    position: relative;
+    left: 50px; 
+    top: 15px;
+}
+
+#advanced-search-icon {
+    position: relative;
+    top: 3px;
+    color: #ddd;
+    transition: color .2s; 
+}
+
+#advanced-search-icon:hover {
+    color: #fff;
+    transition: color .2s; 
+}
+
+i.search-submit-button {
+    font-size: 1.5em;
+    margin: 0 9px;
+    position: relative;
+    top: 3px;
+    color: #ddd;
+    transition: color .2s; 
+}
+
+i.search-submit-button:hover { 
+    cursor: pointer;
+    color: #fff;
+    transition: color .2s; 
+}
+
+div.advanced-search-option.search-help {
+    margin-left: 60px;
+    margin-top: 25px;
+}
+
+#advanced-search-link {
+    color: white;
+    font-weight: 600;
+    padding: 0px 10px;
+}
+
+#advanced-search-link:hover { text-decoration: underline !important; }
+
+div.separator {
+    width: 100%;
+    height: 3px;
+}
+
+
+/*************** Header ***************/
+
+header { 
+    background-color: #fff;
+    position: relative;
+}
+
+header a.logo { 
+    z-index: 2;   /* stack this above the nav bar (1) which is above the default (0) */
+    position: fixed; 
+    display: block;
+    width: 200px;
+    height: 50px;
+    top: 16px;
+    left: 15px;
+}
+
+header a.logo span { display: none; }
+
+header div.hero          { position: absolute; height: 130px; top: 82px; left: 256px; }
+header .welcome          { margin-bottom: 0px; }
+header .welcome-sub      { margin-bottom: 18px; font-style: italic; }
+header .learn-more       { float: left; }
+
+header .humansdoitbetter,
+header .dmoz-hashtag     { font-size: 1.4em; font-weight: 600; font-style: italic;
+                           position: absolute; top: 176px; right: 18px; }
+
+header .humansdoitbetter:hover,
+header .dmoz-hashtag:hover { cursor: pointer; }
+
+header div.mozzie {
+    height: 215px; 
+    width: 200px; 
+    margin-left: 50px;
+    background: #fff url(../img/mozzie-banner.png) no-repeat left bottom;
+    background-size: 140px;
+}
+
+div.twitter-follow {
+    display: block;
+    position: fixed;
+    bottom: 9px; right: 15px;
+    z-index: 2;
+}
+
+/* can only follow personal Facebook accounts, not Facebook Pages (for businesses, organizations, websites, ...) */
+div.fb-follow { display: none; }
+
+div.fb-like {
+    display: block;
+    position: fixed;
+    bottom: 9px; right: 135px;
+    z-index: 2;
+}
+
+/* twitter icon is higher than fb on the node and tree viewer pages, so adjust for it */
+div.twitter-follow.viewer { bottom: 0px; }
+
+/* Section - All 
+
+   Includes a pseudo-html element (section::after) to make sure section is sized 
+   to hold all elements inside
+*/
+
+section        { padding: 0 0; }
+section::after { content:''; display: block; clear: both; }
+
+/************** Section - Search **************/
+
+section.search-and-social {  
+    padding-top: 6px; 
+    padding-bottom: 0px;
+    color: #fff; 
+}
+
+#more-search-options:hover { cursor: pointer; }
+
+#share-google { display: none; }
+
+section div.social {
+    float: right;
+    margin-top:   13px;
+    margin-right: 15px;
+}
+
+section div.basic-search {
+    display: inline-block;
+    padding-top: 10px;
+}
+
+section div.advanced-search {
+/*  display: inline-block;  */
+    display: none; 
+    margin-top: 10px;
+}
+
+section div.basic-search .text-box  { 
+    width: 25em; 
+    height: 2em;
+    border: 2px solid #ccc;
+    font-size: 1.1em;
+    padding: 4px;
+    margin-left: 0px;
+    margin-top: 2px;
+}
+
+section div.basic-search .text-box:focus {
+    outline: none !important;
+    border: 2px solid #eee;
+    box-shadow: 2 2 10px #ddd;
+}
+
+section div.basic-search input.btn   {
+    width: 35px;
+    font-size: 1.2em;
+    text-decoration: none; 
+    color: #fff; 
+    border: 1px solid #fff;
+    background: no-repeat;
+    background-size: 25px 1.2em;
+    background-image: url(../img/search.svg);
+    background-position: center;
+    transition: background-color .3s; 
+    background-color: #ddd; 
+    position: relative;
+    left: 10px;
+    top: 1px;
+}
+
+section div.basic-search input.btn.viewer {
+    top: 5px;
+}
+
+section div.basic-search input.btn:hover {
+    transition: background-color .3s;
+    background-color: #fff;
+}
+
+#more-search-options {
+    margin: 0 10px 0 25px;
+    font-size: 1.3em;
+}
+
+section div.advanced-search a.btn   {
+    display: block;
+    margin: 1px 24px 0;
+    font-size: 1.2em; 
+    text-decoration: none;
+    color: #fff; 
+    border: 1px solid #fff;
+    transition: background-color .3s; 
+}
+
+section div.advanced-search a.btn:hover {
+    background-color: rgba(0,0,0,.5);
+}
+
+/* RAD try eliminating the basic search icon for now */
+/* section div.basic-search input.btn  { display: none; } */
+.advanced-search-option { display: none; }
+
+fieldset.login        { width: 500px; }
+fieldset.login button { margin-top: 10px; }
+#div-forgot           { padding: 15px 0; }
+
+/************** Social **************/
+
+/* Font Awesome customization */
+div.social .fa {
+    color: #ddd;
+    transition: color .2s;
+    margin: 0px 2px;
+    cursor: pointer;
+}
+
+div.social .fa:hover {
+    color: #fff;
+    transition: color .2s;
+}
+
+/************** Forms ***************/
+
+form label                           { padding-right: 10px; }
+div.form-item                        { padding: 5px; padding-bottom: 20px; border-bottom: 1px solid #ccc; }
+div.form-new-item                    { margin: 8px; padding: 5px 0px 15px; border-top: 1px solid #eee; }
+div.form-new-item div                { margin: 0 15px; }
+div.form-new-item div.radio          { display: inline-block; }
+div.form-new-item div.button         { width: 100%; text-align: center; padding-top: 20px; }
+div.form-new-item input.radio        { width: auto; }
+div.form-new-item input.password     { width: 10em; }
+div.form-new-item textarea           { width: 80%; }
+div.form-new-item input.email        { width: 40em; }
+div.form-new-item input.captcha      { width: 10em; }
+div.form-radio-item div              { margin: 0 20px 20px; }
+
+#flag-form-details       { display: none; }
+#current-listing-details { margin: 0 20px; padding-bottom: 30px; }
+#current-listing-details div.form-item div { margin: 0 20px; }
+
+div.form-container {
+    padding: 7px;
+}
+
+form div.field-name {
+    font-weight: bold;
+    float: left;
+    clear: both;
+    min-width: 150px;
+}
+
+form div.field-explanation {
+    color: #666;
+    font-size: 0.9em;
+    font-style: italic;
+    clear: both;
+    margin: 0px 30px;
+}
+
+#apply-category-message { margin: 0 30px 15px; }
+
+#public-abuse-check-status {
+    padding-top: 10px;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+
+/************** Navigation **************/
+
+.content.post-header { padding: 15px; }
+
+.content:not(.description):not(.faq) { margin-top: 85px; }
+
+#main-social { display: none; }
+
+.main-nav-from-header { border-bottom: 1px solid #ccc; }
+footer.from-footer    { border-top:    1px solid #ccc;  padding-top: 10px; }
+
+nav {
+    background-color: #fff;
+    position: fixed;
+    height: 85px;
+    top: 0px;
+    left: 0px;
+    padding: 0;
+    width: 100%;
+    z-index: 1;
+    margin:  0px 0 0px 0;
+    font-size: 1.1em;
+}
+
+nav::after { content:''; display: block; clear: both; }
+
+nav ul { list-style: none; margin: 0; padding: 0px; }
+
+nav ul li:hover > ul { display: block; }
+
+nav ul li a { 
+    display: inline-block;
+    padding: 2px 2px;
+    margin: 0px 18px;
+    text-decoration: none;
+    width: 90px;
+    position: relative;
+}
+
+/* Add a border element under each menu item with an animated reveal on hover */
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid #333;
+    transition: 0.4s;
+}
+nav ul li a:hover:after { width: 100%; }
+#dashboard-link:hover:after { width: 0%; }
+
+
+/* With a black background, set shades of gray here to avoid conflict with colors used elsewhere */
+/* With a white background, comment out these settings to use the page's colors */
+
+/*
+    nav a         { color: #eee; }
+    nav a:visited { color: #999; }
+    nav a:hover   { color: #ccc; }
+*/
+
+nav a { font-weight: 600; }
+
+nav > ul          { padding-left: 240px; }
+nav > ul > li     { float: left; position: relative; top: 28px; }
+nav > ul > li > a { width: auto; margin: 0px 13px;  }
+
+/* Footer */
+
+footer            { width: 100%; font-size: .9em; margin: 20px 0 30px 0; color: #999; }
+footer div        { margin: auto; display: inline-block; }
+footer .copyright { width: 60%; margin-left: 15px; }
+footer .terms     { width: 32%; text-align: right; }
+footer .build     { width: 100%; padding-top: 0; text-align: center; }
+
+
+/*************** Large screens ***************/
+
+@media screen and (max-width: 1260px) {
+
+.mobile-only { display: none; }
+}
+
+
+/*************** Medium screens ***************/
+
+@media screen and (max-width: 900px) {
+    
+.mobile-only { display: none; }
+
+    /* Text */
+    h1 { font-size: 1.8em; }
+    h2 { font-size: 1.2em; }
+    h3 { font-size: 1.1em; }
+    h4 { font-size: 1.0em; }
+    
+    /* Header */
+    header a.logo   { width: 160px; height: 40px; top: 24px; left: 12px; }
+    header div.hero { top: 90px; left: 194px; }
+    
+    header div.mozzie { margin-left: 34px; background-size: 126px; }
+
+    header .welcome-sub { margin-bottom: 10px; padding-right: 10px; }
+
+    /* Navigation */
+    nav {
+        padding: 0;
+        z-index: 1;
+        margin:  0px 0 0px 0;
+    }
+
+    nav > ul { padding-left: 180px; }
+}
+
+
+/*************** Medium-Small screens ***************/
+
+@media screen and (max-width: 725px) {
+
+    nav          > ul > li { top: 13px; }
+    nav.homepage > ul > li { top: 28px; }
+
+    .content:not(.description):not(.faq) { margin-top: 0px; }
+
+    h1 { font-size: 1.5em; }
+    h2 { font-size: 1.2em; }
+    h3 { font-size: 1.1em; }
+    h4 { font-size: 1.0em; }
+    
+    h3.stat     { font-size:  .9em; }    
+    a.btn       { font-size: 1.0em; }
+    input.btn   { font-size:  .9em; }
+
+    div.form-new-item input:not(.submit) { width: 100%; }
+    div.form-new-item input.radio        { width: auto; }
+    div.form-new-item textarea           { width: 100%; }
+    div.form-new-item input.email        { width: 100%; }
+
+    .non-mobile  { display: none;  visibility: hidden;  width: 0px;  height: 0px; }
+    .mobile-only { display: inherit; }
+    
+    /* Header */
+
+    header div.logo-container {
+        position: inherit;
+        width: 100%;
+        height: 52px;
+        background-color: white;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    header div.hero h1 { line-height: inherit; }
+
+    header a.logo {
+        position: inherit;
+        display: inline-block;
+        top: 6px;
+        left: inherit;
+    }
+
+    header div.mozzie {
+        height: 110px;
+        width: 110px;
+        margin-left: 10px;
+        background-size: 105px;
+    }
+
+    header div.hero    { width: auto; top: 80px; left: 140px; }
+    header div.hero h1 { font-size: 1.4em; margin-bottom: 5px; }
+
+    fieldset.login { width: 90%; }
+
+    /* Navigation */
+
+    nav { 
+        display: none;
+        position: static; 
+        width: auto; 
+        height: inherit;
+        padding: 6px 10px; 
+        background-color: white;
+        overflow: hidden;
+    }
+    
+    nav ul            { display: block; position: static; }
+    nav > ul          { padding: 0; }
+    nav > ul > li     { top: 0px; float: none; max-width: none; margin-top: 7px; }
+    nav > ul > li > a { width: auto; margin: 10px 13px 0px;  }
+
+    nav.homepage > ul > li { top: 0px; }
+    
+    nav ul li:hover { background: none; }
+    
+    nav ul li a, li.social-link { 
+        width: auto;
+        display: block;
+        margin: 6px 6px;
+        padding: 8px 15px;
+        border: 1px solid rgba(0,0,0,.25);
+        font-weight: 600;
+    }
+
+    nav ul li a:hover, li.social-link:hover { background-color: hsla(120,100%, 25%, 0.1); cursor: pointer; }
+    nav ul li a:hover:after { width: 0%; }
+    
+    nav a[aria-haspopup="true"]::after { display: none; }
+    
+    a.menu {
+        font-size: 2.0em;
+        display: block;
+        border-top: 2px solid #fff;
+        border-left: 2px solid #fff;
+        border-right: 2px solid #fff;
+        border-radius: 6px;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    /* Section - Search */  
+
+    section div.basic-search { width: 82%; }
+
+    section div.basic-search .text-box { width: 82%; margin-top: 6px; }
+    section.search-and-social { padding-top: 0px; }
+
+    .header-margin.no-search { margin-top: 0px; }
+
+    select.node-select { display: inherit; left: 0px; top: 12px; }
+
+    /* Section - Social */
+
+    #mobile-menu { top: 10px; left: 15px; }
+    #social-menu { top: 10px; right: 15px; }
+
+    #main-social i {
+       padding-right: 5px;
+       position: relative;
+       top: 3px;
+    }
+
+    /* Hide the social icons that are in the header and footer */
+    /* On mobile, sharing and following are in a menu */
+
+    section div.social, div.twitter-follow, div.fb-like { display: none; }
+}
+
+
+/*************** Small screens ***************/
+
+@media screen and (max-width: 625px) {
+
+    /* Make the icon and top category big and eliminate the sub-categories */
+    /* Make the icon and top category the custom category color            */
+
+    h2.top-cat { margin-top: 15px; font-size: 1.5em; }
+    h3.sub-cat { height: 0px; visibility: hidden; }
+
+    header div.hero    { top: 80px; left: 128px; }
+
+    #public-abuse-report-text   { width: 150px; }
+    #public-abuse-captcha-image { width: 150px; }
+
+    /* Footer */
+    footer .build  { padding-top: 1em; }
+}
+
+
+/*************** Even smaller screens ***************/
+
+@media screen and (max-width: 360px) {
+
+    header .welcome-sub { margin-bottom: 7px; }
+}
+
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
+
