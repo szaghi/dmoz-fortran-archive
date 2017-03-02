@@ -1,0 +1,212 @@
+
+/* CSS for DMOZ Sites */
+
+/*************** Full screen ***************/
+
+div.site-icon  { float: left; }
+div.site-title { display: inline-block; }
+div.site-descr { margin-left: 2em; line-height: 1.5em; max-width: 1000px; }
+div.site-flag  { display: none; float: right; }
+
+a.star {
+    background:    url('../img/star.gif') no-repeat right -2px;
+    font-weight:   bold;
+    padding-right: 17px;
+}
+
+div.site-url-and-ref { padding-top: 10px; }
+
+div.site-url {
+    font-size: 0.8em;
+    margin-left: 35px;
+    margin-top: 7px;
+}
+
+span.page-number:before { content: '- '; }
+span.page-number:after  { content: ' -'; }
+
+span.page-number {
+    padding: 0px 10px;
+    font-size: 1.2em;
+}
+
+span.page-num-gap {
+    margin: 2em;
+}
+
+div.treelocation {
+    padding-left: 40px;
+    font-size: 0.9em;
+}
+
+div.treelocation span { display: table-cell; }
+
+div.treelocation span.label { padding-top: 1em; white-space: nowrap; }
+div.treelocation span.link  { padding-left: 1em; }
+
+
+div.site-item {
+    clear: both; 
+    overflow: auto;
+    padding: 5px 18px 8px 10px;
+}
+    
+div.site-item a {
+    font-weight: 600;
+}
+
+h3.node-header:hover                  { cursor: pointer; }
+h3.node-header:hover span.header-text { text-decoration: underline; }
+
+span.header-text { margin: 0 10px; }
+span.header-count { margin: 0 3px; }
+
+h3.node-header {
+    background: rgb(250,250,250);
+    color: #222;
+    font-weight: 600;
+    margin: 0;
+    padding: 5px 5px 0px 10px;
+    margin-bottom: 15px;
+}
+
+div.search-term {
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+div.search-term span.term {
+   font-weight: bold;
+   margin-left: 8px;
+}
+
+ol.dir {
+   background: white;
+}
+
+ol.dir li {
+   margin: 0.7em 0;
+}
+
+ol.site li { 
+    margin: 1.0em 0; 
+}
+
+span.search-link {
+    margin-left: 5px;
+}
+
+div.site-ref {
+    font-style:   italic;
+    font-weight:  400;
+    font-size:    0.8em;
+    margin:       5px 0 0 35px;
+    padding-left: 5px;
+    background:   url('../img/mozilla.gif') no-repeat left 2px;
+}
+
+div.site-ref a {
+    margin-left: 15px;
+}
+
+div.previous-next {
+    width: 100%;
+    text-align: center;
+}
+
+a.previous-page,a.next-page {
+    padding-top: 1em;
+    font-size: 1.5em;
+}
+
+div.previous-page, div.next-page {
+    display: inline-block;
+    width: 40px;
+}
+
+div.previous-next {
+    padding: 25px 0px 0px;
+}
+
+    div.social.ns          { position: inherit; top: 9px; right: 0px; z-index: 2; }
+
+    span.alt-sites {
+        margin: 0px 20px;
+    }
+
+    div.search-on {
+        display: inline-block;
+    }
+
+    div.alt-sites {
+        display: inline-block;
+        margin: 0px 20px;
+    }
+
+
+/*************** Large screens ***************/
+
+@media screen and (max-width: 1260px) {
+
+}
+
+
+/*************** Medium screens ***************/
+
+@media screen and (max-width: 900px) {
+
+    /* Custom placement of search items when node select (ns) is included */
+
+    div.advanced-search.ns { position: absolute; top: 150px; right: 0px; }
+
+    /***** Alternate Search *****/
+
+    div.search-on {
+        display: block;
+        width: 44%;
+        float: left;
+    }
+
+    div.alt-sites {
+        display: block;
+        width: 55%;
+        margin: 0px;
+        float: right;
+        line-height: 1.5em;
+        text-align: right;
+    }
+}
+    
+
+/*************** Small screens ***************/
+
+@media screen and (max-width: 625px) {
+
+    /***** Navigation *****/
+
+    div.site-url, div.site-ref { display: none; }
+
+
+    /***** Search *****/
+
+    /* Revert to original placement of search items when node select (ns) is included */
+
+    div.advanced-search.ns { position: inherit; top: inherit; right: inherit; }
+    div.social.ns          { position: inherit; top: inherit; right: inherit; }
+
+    h3.node-header:hover span.header-text { text-decoration: none; }
+    h3.node-header { padding: 3px 5px 0px 0px; margin-bottom: 10px; }
+    h3.node-header i.arrow { margin-left: 10px; }
+
+    div.site-icon   { display: table-cell; }
+    div.site-title  { display: table-cell; }
+    div.site-item a { display: table-row; }
+}
+
+
+/*************** Even smaller screens ***************/
+
+@media screen and (max-width: 360px) {
+
+    h3.node-header { font-size: 0.9em; }
+}

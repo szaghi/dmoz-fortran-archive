@@ -1,0 +1,54 @@
+
+/*************************************************************************/
+/* Specify the unique category color and icon here, with only the alpha  */
+/* changing, making it easy to set and change each category's color      */
+
+a.btn,
+div.separator,
+section.search-and-social,
+section.stats                 { background-color: hsla(170, 100%, 25%, 1.0); }
+
+#cat-list-section-2,
+#cat-list-section-3           { border-top: none; }
+
+.themed-background,
+div.cat-item:hover, 
+div.site-item:hover           { background-color: hsla(170, 100%, 25%, 0.07) !important; }
+
+div.current-cat .node-count   { background-color: hsla(170, 100%, 25%, 0.1); }
+hr                            { border-color:     hsla(170, 100%, 25%, 0.1); }
+header a.logo                 { background:       hsla(170, 100%, 25%, 1.0)    url(../img/DMOZ-logo.svg) no-repeat 0 0;
+                                background-size:  contain; }
+
+section.alt-search            { border-bottom: 1px solid hsla(170, 100%, 25%, 0.1); }
+div.site-item                 { border-top:    1px solid hsla(170, 100%, 25%, 0.2); }
+
+div.site-item:first-of-type   { border-top: none; }
+
+.slick-prev:before, 
+.slick-next:before            { color: hsla(170, 100%, 25%, 1.0); }
+
+/* Define link colors in this order so they take effect: visited, regular, hover */
+a:visited                     { color: hsla(170, 100%, 25%, 1.0); }
+a, li.social-link             { color: hsla(170, 100%, 25%, 1.0); }
+a:hover, li.social-link:hover { color: #222; }
+
+div.current-cat.computers {
+   background-size: 3em 3em;
+   background-position: 0.5em 0.5em;
+}
+
+.thundercats .news {
+   background-size: contain;
+   background-position: center;
+}
+
+@media screen and (max-width: 625px) {
+
+    /* On mobile, use colored headers to divide sections */
+    h3.node-header { color: #eee;  background-color: hsla(170, 100%, 25%, 0.9); }
+
+    nav ul li a:hover, li.social-link:hover { background-color: hsla(170, 100%, 25%, 0.1); }
+
+    section.results.alphabar { border-left: none;  border-right: none;  border-top: 10px solid hsla(170, 100%, 25%, 1.0); }
+}

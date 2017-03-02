@@ -1,0 +1,1839 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML>
+
+<HTML lang="en">
+  <HEAD>
+    <meta name="description"          content="Fortran codes estimating statistical and econometric models on data.">
+    <meta name="keywords"             content="Computers, Programming, Languages, Fortran, Source Code, Statistics and Econometrics">
+    <meta name="viewport"             content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type"   content="text/html; charset=UTF-8">
+
+    <TITLE>DMOZ - Computers: Programming: Languages: Fortran: Source Code: Statistics and Econometrics</TITLE>
+
+    <meta property="og:url"           content="" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="DMOZ - Computers: Programming: Languages: Fortran: Source Code: Statistics and Econometrics" />
+    <meta property="og:description"   content="The Directory of the Web" />
+    <meta property="og:image"         content="/img/mozzie-banner.png" />
+
+    <link rel="icon"          type="image/x-icon"  href="../../../../../../img/mozilla.gif"      />
+    <link rel="shortcut icon" type="image/x-icon"  href="../../../../../../img/mozilla.gif"      />
+
+    <link rel="stylesheet"    type="text/css"      href="../../../../../../css/slick/slick.css"  />
+    <link rel="stylesheet"    type="text/css"      href="../../../../../../css/slick/slick-theme.css" />
+    <link rel="stylesheet"    type="text/css"      href="../../../../../../css/font-awesome/css/font-awesome.min.css" />
+
+    <link rel="stylesheet"    type="text/css"      href="../../../../../../css/dmoz-common.css"  />
+    <link rel="stylesheet"    type="text/css"      href="../../../../../../css/dmoz-cats.css"    />
+    <link rel="stylesheet"    type="text/css"      href="../../../../../../css/dmoz-sites.css"   />
+    <link rel="stylesheet"    type="text/css"      href="../../../../../../css/dmoz-icons.css"   />
+    <link rel="stylesheet"    type="text/css"      href="../../../../../../css/dmoz-cat-computers.css"   />
+
+    <script type="text/javascript" src="../../../../../../js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../../../../../../js/slick/slick.min.js"></script>
+    <script type="text/javascript" src="../../../../../../js/dmoz-common.js"></script>
+    <script type="text/javascript" src="../../../../../../js/dmoz-social.js"></script>
+    <script type="text/javascript" src="../../../../../../js/dmoz-design.js"></script>
+
+    <BASE target="_top">
+  </HEAD>
+
+<body dir="LTR">
+
+  <!---------- FACEBOOK FOLLOW ---------->
+
+  <div id="fb-root"></div>
+
+  <!---------- SMALL HEADER ---------->
+
+    <header>
+      <div class="logo-container">
+        <a class="logo" title="DMOZ" href="https://www.dmoz.org/"><span>DMOZ</span></a>
+      </div>
+
+      <div class="hero"></div>
+
+      <a class="navigation menu"  id="mobile-menu"><i id="mobile-menu-icon" class="fa fa-bars"></i></a>
+      <a class="socialmedia menu" id="social-menu"><i id="social-menu-icon" class="fa fa-share-alt"></i></a>
+    </header>
+
+  <!---------- SOCIAL -------------->
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    <div class="twitter-follow viewer"><a class="twitter-follow-button" href="https://twitter.com/dmoz" data-show-count="false" data-dnt="true"></a></div>
+    <div class="fb-follow" data-href="https://www.facebook.com/dmoz" data-layout="button" data-show-faces="false"></div>
+    <div class="fb-like" data-href="http://dmoz.org" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+
+  <!---------- NAVIGATION ---------->
+
+    <nav id="main-nav">
+        <ul>
+            <li> <a href="https://www.dmoz.org/docs/en/about.html">        About       </a> </li>
+            <li> <a href="https://www.dmoz.org/docs/en/help/become.html">   Become an Editor </a> </li>
+            <li> <a href="https://www.dmoz.org/docs/en/add.html">            Suggest a Site          </a> </li>
+            <li> <a href="https://www.dmoz.org/docs/en/help/helpmain.html"> Help             </a> </li>
+
+            <li> <a href="https://www.dmoz.org/editors/"> Login                       </a> </li>
+
+        </ul>
+    </nav>
+
+  <!---------- SOCIAL MENU ---------->
+
+    <nav id="main-social" class="nodeviewer">
+        <ul>
+            <li class="social-link" onClick="share('facebook', 'nodeviewer', '' )">                                        <i class="fa fa-2x fa-facebook-square"></i> Share via Facebook </li>
+            <li class="social-link" onClick="share('twitter',  'nodeviewer', '#OrganizeTheWeb' )"> <i class="fa fa-2x fa-twitter-square"></i>  Share via Twitter  </li>
+            <li class="social-link" onClick="share('linkedin', 'nodeviewer', '' )">                                        <i class="fa fa-2x fa-linkedin-square"></i> Share via LinkedIn </li>
+            <li class="social-link" onClick="share('mail',     'nodeviewer', '' )">                                        <i class="fa fa-2x fa-envelope-square"></i> Share via e-Mail   </li>
+            <p>
+            <li> <span><a class="social-link" target="_blank" href="http://www.facebook.com/dmoz"> <i class="fa fa-2x fa-facebook-square"></i> Visit DMOZ on Facebook </a></span> </li>
+            <li> <span><a class="social-link" target="_blank" href="http://www.twitter.com/dmoz">  <i class="fa fa-2x fa-twitter-square"></i>  Visit DMOZ on Twitter </a></span>  </li>
+        </ul>
+    </nav>
+
+  <!---------- SEARCH ---------->
+
+  <div id="main-content" class="content ">
+
+    <section id="node-search-viewer" class="search-and-social">
+
+      <div class="search-wrapper">
+
+          <form id="search-form" action="https://www.dmoz.org/search" method="GET">
+
+            <span id="more-search-options">
+              <i id="advanced-search-icon" class='fa fa-plus'></i>
+            </span>
+
+            <div class="basic-search">
+              <input class="text-box" type="search" name="q" value="" autofocus placeholder=" Search DMOZ"/>
+              <i class="search-submit-button fa fa-search"></i>
+              <input type="hidden" name="all" value="no" >
+              <input type="hidden" name="t" value="computers" >
+            </div>
+
+            <div class="social ns">
+              <span id="share-facebook" class="fa fa-2x fa-facebook-square"    onClick="share('facebook', 'nodeviewer', '' )"></span>
+              <span id="share-twitter"  class="fa fa-2x fa-twitter-square"     onClick="share('twitter',  'nodeviewer', '#OrganizeTheWeb' )"></span>
+              <span id="share-linkedin" class="fa fa-2x fa-linkedin-square"    onClick="share('linkedin', 'nodeviewer', '' )"></span>
+              <span id="share-mail"     class="fa fa-2x fa-envelope-square"    onClick="share('mail',     'nodeviewer', '' )"></span>
+              <span id="share-google"   class="fa fa-2x fa-google-plus-square" onClick="share('google',   'nodeviewer', '' )"></span>
+            </div>
+
+            <div class="advanced-search-option" id="advanced-node-div">
+              <select name="cat" id="advanced-node-select" class="node-select">
+
+
+                  <option value="all" selected id="all-yes"><label for="all-yes">the entire directory</label></option>
+
+                  <option value="Computers" id="all-no"><label for="all-no"> &nbsp;  Computers</label></option>
+
+                  <option value="Computers/Programming" id="all-no"><label for="all-no"> &nbsp;  &nbsp;  Programming</label></option>
+
+                  <option value="Computers/Programming/Languages" id="all-no"><label for="all-no"> &nbsp;  &nbsp;  &nbsp;  Languages</label></option>
+
+                  <option value="Computers/Programming/Languages/Fortran" id="all-no"><label for="all-no"> &nbsp;  &nbsp;  &nbsp;  &nbsp;  Fortran</label></option>
+
+                  <option value="Computers/Programming/Languages/Fortran/Source_Code" id="all-no"><label for="all-no"> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  Source Code</label></option>
+
+                  <option value="Computers/Programming/Languages/Fortran/Source_Code/Statistics_and_Econometrics" id="all-no"><label for="all-no"> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  Statistics and Econometrics</label></option>
+
+              </select>
+            </div>
+
+            <div class="advanced-search-option search-help">
+              <a id="advanced-search-link" href="https://www.dmoz.org/docs/en/searchguide.html">Help with Search</a>
+            </div>
+
+          </form>
+      </div>
+
+   </section>
+
+
+       
+<div id="doc">
+
+    <section class="results desc-and-faq">
+
+          <!---------- DESCRIPTION and FAQ ---------->
+
+            <div class="desc-and-faq">
+
+
+                    <div class="desc-link"><a title="Category Description" href="https://www.dmoz.org/desc/Computers/Programming/Languages/Fortran/Source_Code/Statistics_and_Econometrics"><i class="fa fa-info-circle"></i></a></div>
+
+            </div>
+
+          <!---------- CURRENT CATEGORY ---------->
+
+            <div class="current-cat computers">
+<i class='cat-path fa fa-chevron-right'></i><a class='breadcrumb' href='https://www.dmoz.org/Computers/'> Computers</a><i class='cat-path fa fa-chevron-right'></i><a class='breadcrumb' href='https://www.dmoz.org/Computers/Programming/'> Programming</a><i class='cat-path fa fa-chevron-right'></i><a class='breadcrumb' href='https://www.dmoz.org/Computers/Programming/Languages/'> Languages</a><i class='cat-path fa fa-chevron-right'></i><a class='breadcrumb' href='../../index.html'> Fortran</a><i class='cat-path fa fa-chevron-right'></i><a class='breadcrumb' href='../index.html'> Source Code</a>
+                  <i class='cat-path fa fa-chevron-right'></i>Statistics and Econometrics <div class="node-count">73</div>
+
+                <span class="volunteer-other"><a title='Please apply to edit a different category' href="https://www.dmoz.org/docs/en/help/become.html"><i class="volunteer volunteer-other fa fa-user"></i></a></span>
+
+                <span class="suggest-url"><a title='Suggest a site for this category' href="https://www.dmoz.org/public/suggest?t=computers&amp;cat=Computers/Programming/Languages/Fortran/Source_Code/Statistics_and_Econometrics"><i class="suggest-url fa fa-clipboard"></i></a></span>
+
+                <span class="report-abuse"><a title='Report spam or abuse of this category' href="https://www.dmoz.org/public/abuse?t=computers&amp;cat=Computers/Programming/Languages/Fortran/Source_Code/Statistics_and_Econometrics&amp;lang=en"><i class="report-abuse fa fa-user-secret"></i></a></span>
+
+            </div>   <!-- end of div current-cat -->
+
+            <div id="description-block" class="themed-background">
+              <div id="description-close"> <i class='fa fa-times-circle'></i> </div>
+              <div id="description-text"> Fortran codes estimating statistical and econometric models on data.   </div>
+            </div>
+
+    </section>
+
+
+          <!---------- ALPHABAR ---------->
+
+
+
+          <!---------- CHILD CATEGORIES ---------->
+
+                  </section>
+
+          <!---------- RELATED CATEGORIES ---------->
+
+              <section class="results see-also">
+                <h3 id="see-also-header" class="node-header">
+                  <i class='arrow fa fa-caret-down'></i>
+                  <span class="header-text">Related categories</span>
+                  <span class="header-count node-count">2</span>
+                  <i class='section-closed fa fa-folder'></i>
+                  <i class='section-open   fa fa-folder-open'></i>
+                </h3>
+                <div id="related-section" class="section-wrapper">
+                  <div id="see-also-content" class="table see-also cat-content results">
+                
+                      <div class="see-also-row">
+                        <a class="row see-also" href="https://www.dmoz.org/Computers/Algorithms/Pseudorandom_Numbers/">
+                            <div class="cell one-folder-icon"> <i class='catIcon fa fa-folder'></i> </div>
+                            <div class="cell one-browse-node"> Computers<i class='fa fa-chevron-right'></i> Algorithms<i class='fa fa-chevron-right'></i> Pseudorandom Numbers </div>
+                            <div class="cell one-node-count node-count">17</div>
+                        </a>
+                      </div>
+                
+                      <div class="see-also-row">
+                        <a class="row see-also" href="https://www.dmoz.org/Science/Math/Statistics/Software/">
+                            <div class="cell one-folder-icon"> <i class='catIcon fa fa-folder'></i> </div>
+                            <div class="cell one-browse-node"> Science<i class='fa fa-chevron-right'></i> Math<i class='fa fa-chevron-right'></i> Statistics<i class='fa fa-chevron-right'></i> Software </div>
+                            <div class="cell one-node-count node-count">165</div>
+                        </a>
+                      </div>
+                
+                  </div>
+                </div>
+    </section>
+
+
+
+    <!---------- SITES ---------->
+
+    <section class="results sites">
+
+                <h3 id="site-list-header" class="node-header site-header">
+                     <i class='arrow fa fa-caret-down'></i>
+                     <span class="header-text">Sites</span>
+                     <span class="header-count node-count">73</span>
+                     <i class='section-closed fa fa-file-o'></i>
+                     <i class='section-open   fa fa-file-text-o'></i>
+                </h3>
+
+                <div id="sites-section" class="section-wrapper">
+                        <div id="site-list-content" class="results browse-content">
+            
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.stat.ualberta.ca%2F%7Ehooper%2Fresearch%2Falb_software%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.stat.ualberta.ca/~hooper/research/alb_software/">
+                                    <div class="site-title">Adaptive Logistic Basis Function Regression (ALB) </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran 77 code by Peter M. Hooper.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fforrest.psych.unc.edu%2Fresearch%2Falscal.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://forrest.psych.unc.edu/research/alscal.html">
+                                    <div class="site-title">ALSCAL </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran code by Forrest W. Young for multidimensional scaling.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fmerlot.stat.uconn.edu%2F%7Enalini%2Fprograms.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://merlot.stat.uconn.edu/~nalini/programs.html">
+                                    <div class="site-title">AR and ARFIMA models </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Tests for AR(1) Parameter in Regression Models with Autocorrelated Errors. Univariate and multivariate Bayesian ARFIMA. By Nalini Ravishanker and coworkers.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.stat.tamu.edu%2Fftp%2Fpub%2Fjnewton%2Fload.f" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.stat.tamu.edu/ftp/pub/jnewton/load.f">
+                                    <div class="site-title">ARMA and Kalman Filter model estimation </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    By J. Newton
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.uinet.or.jp%2F%7Eishiyasu%2Fwada%2FAirc.f" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.uinet.or.jp/~ishiyasu/wada/Airc.f">
+                                    <div class="site-title">Autoregressive model estimation </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Originally by H. Akaike, modified by T. Morikawa, M. Sigemori, and T. Wada.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fusers.iems.northwestern.edu%2F%7Enelsonb%2FARTA%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://users.iems.northwestern.edu/~nelsonb/ARTA/">
+                                    <div class="site-title">Autoregressive to Anything (ARTA) </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Code by Marne C. Cario and Barry L. Nelson to simulate stationary time series with arbitrary marginal distributions and feasible autocorrelation structure specified through lag p.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.microcomputerpower.com%2Fcatalog%2Fcanoco.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.microcomputerpower.com/catalog/canoco.html">
+                                    <div class="site-title">CANOCO </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Program for canonical community ordination by [partial] [detrended] [canonical] correspondence analysis, principal components analysis and redundancy analysis. [Commercial]
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.stats.ox.ac.uk%2F%7Eripley%2FPRbook%2Fclusfind" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.stats.ox.ac.uk/~ripley/PRbook/clusfind">
+                                    <div class="site-title">Clusfind </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Complete code of six stand-alone Fortran programs for cluster analysis, described and illustrated in L. Kaufman and P.J. Rousseeuw (1990), "Finding Groups in Data: an Introduction to Cluster Analysis", Wiley.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.pitt.edu%2F%7Ecsna%2FMilligan%2Freadme.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.pitt.edu/~csna/Milligan/readme.html">
+                                    <div class="site-title">Cluster Analysis </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Cluster generation, hierarchical clustering with influence detection, and K-Means clustering with influence detection, by Glenn Milligan.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.jstatsoft.org%2Fv02%2Fi04%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.jstatsoft.org/v02/i04/">
+                                    <div class="site-title">COVAR </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    A program for multifactor relative risks, confidence limits, and tests of hypotheses using regression coefficients and a variance-covariance matrix obtained from a previous additive or multiplicative regression analysis. By Leif E. Peterson, with accompanying paper.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.desy.de%2F%7Eblobel%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.desy.de/~blobel/">
+                                    <div class="site-title">Data Analysis </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran 77 codes by Volker Blobel for sorting, linear algebra, random number generation, least squares fitting with constraints and with many variables, and unfolding of measured distributions.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.itl.nist.gov%2Fdiv898%2Fsoftware%2Fdatapac%2Fhomepage.htm" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.itl.nist.gov/div898/software/datapac/homepage.htm">
+                                    <div class="site-title">DATAPAC </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran 77 statistical library by James Filliben.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fcc.oulu.fi%2F%7Ejarioksa%2Fsofthelp%2Fceprog.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://cc.oulu.fi/~jarioksa/softhelp/ceprog.html">
+                                    <div class="site-title">DECORANA and TWINSPAN </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran 77 programs for correspondence analysis, by Jari Oksanen.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.philbrierley.com%2Fmain.html%3Fcode%2Ffortran.html%26code%2Fcodeleft.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.philbrierley.com/main.html?code/fortran.html&code/codeleft.html">
+                                    <div class="site-title">Demo Fortran90 Multilayer Perceptron Backprop Code </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    By Phil Brierley. A genetic algorithm code is at http://www.philbrierley.com/main.html&code/gafortran.html&code/codeleft.html .
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.netlib.org%2Fdierckx%2Findex.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.netlib.org/dierckx/index.html">
+                                    <div class="site-title">DIERCKX </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran subroutines for calculating smoothing splines for various kinds of data and geometries, with automatic knot selection.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.zoology.ubc.ca%2F%7Eschluter%2Fsoftware.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.zoology.ubc.ca/~schluter/software.html">
+                                    <div class="site-title">Dolph Schluter's Software </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Includes a Fortran 77 program for univariate and multivariate cubic spline regression.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.kent.ac.uk%2Fims%2Fpersonal%2Fmfs%2Fsoftware.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.kent.ac.uk/ims/personal/mfs/software.html">
+                                    <div class="site-title">Econometrics </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Code for Bayesian analysis of long memory and persistence using ARFIMA models, benchmark priors for Bayesian model averaging, estimation of demand systems through consumption efficiency, model uncertainty in cross-country growth regressions, and Bayesian modelling of catch in a Northwest Atlantic Fishery, by Mark Steel.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.maths.uq.edu.au%2F%7Egjm%2Femmix%2FEMMIX.f" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.maths.uq.edu.au/~gjm/emmix/EMMIX.f">
+                                    <div class="site-title">EMMIX </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fits a mixture model of multivariate normal or t-distributions to a user supplied data set via the EM algorithm. By Geoff McLachlan.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fenkf.nersc.no%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://enkf.nersc.no/">
+                                    <div class="site-title">Ensemble Kalman Filter (EnKF) </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran 90 code by Geir Evensen.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww1.fpl.fs.fed.us%2Fcovnorm.code.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www1.fpl.fs.fed.us/covnorm.code.html">
+                                    <div class="site-title">Exact Confidence Bounds on a Normal Distribution Coefficient of Variation </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Obtains a two-sided confidence interval on a coefficient of variation for data from a normal distribution.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Ffairmodel.econ.yale.edu%2Ffp%2Ffp.htm" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://fairmodel.econ.yale.edu/fp/fp.htm">
+                                    <div class="site-title">Fair-Parke Program </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Allows one to estimate and analyze dynamic, nonlinear, simultaneous equations models. The models can be rational expectations models, and they can have autoregressive errors of any order. The estimation techniques include OLS, 2SLS, 3SLS, FIML, LAD, 2SLAD, and some versions of Hansen's method of moments estimator.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.lanl.gov%2FDLDSTP%2Ffast%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.lanl.gov/DLDSTP/fast/">
+                                    <div class="site-title">Fast Statistical Methods </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran 90 and 77 codes by W.H. Press and G.B. Rybicki, for fast inversion matrices of an exponential form arising from   autocorrelation functions of Ornstein-Uhlenbeck processes.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.econ.iastate.edu%2Ftesfatsi%2Ffls.htm" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.econ.iastate.edu/tesfatsi/fls.htm">
+                                    <div class="site-title">Flexible Least Squares (FLS) </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Developed by Robert E. Kalaba and Leigh Tesfatsion, implements the flexible least squares (FLS) approach to time-varying linear regression proposed by Kalaba and Tesfatsion in "Time-Varying Linear Regression Via Flexible Least Squares," Computers and Mathematics With Applications 17 (1989), 1215-1245. The FLS program has been incorporated into the statistical packages SHAZAM (Version 8.0) and GAUSS (TSM version 1.2).
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.johnny-lin.com%2Fflib.html%23math" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.johnny-lin.com/flib.html#math">
+                                    <div class="site-title">Fortran Library </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran 90 program by Johnny Lin to calculate the time-dependent exponent (lambda) and logarithmic displacement curves of a time series.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fbioeng.washington.edu%2Fsoftware%2Ffractal%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://bioeng.washington.edu/software/fractal/">
+                                    <div class="site-title">Fractal Analysis Programs of the National Simulation Resource </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Programs for the generation of synthetic 1-dimensional signals that are simple fractional Brownian noise and for determining the fractal dimension D from a simple fractal time series.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fqed.econ.queensu.ca%2Fjae%2F1996-v11.4%2Ffiorentini-calzolari-panattoni%2Ffcp-progs.zip" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://qed.econ.queensu.ca/jae/1996-v11.4/fiorentini-calzolari-panattoni/fcp-progs.zip">
+                                    <div class="site-title">GARCH Estimates: Analytic Derivatives </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    By Gabriele Fiorentini, Giorgio Calzolari, and Lorenzo Panattoni, for a 1996 paper in the Journal of Applied Econometrics.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.fortran.com%2Ffm_gauss.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.fortran.com/fm_gauss.html">
+                                    <div class="site-title">Gaussian Random Number Generator </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Code to generate autocorrelated Gaussian variates by S. Tim Hatamian.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.netlib.org%2Fgcv%2Findex.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.netlib.org/gcv/index.html">
+                                    <div class="site-title">GCV </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran 77 and RATFOR code to fit smoothing splines using generalized cross-validation.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.gslib.com%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.gslib.com/">
+                                    <div class="site-title">Geostatistical Software LIBrary (GSLIB) </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Codes in Fortran 90 and 77. Accompanies the book "GSLIB: Geostatistical Software Library and User's Guide" by Clayton Deutsch and André Journel.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fpeople.bath.ac.uk%2Fmascj%2Fbook%2Fprograms%2Fgeneral" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://people.bath.ac.uk/mascj/book/programs/general">
+                                    <div class="site-title">Group Sequential Tests </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Programs from book by Christopher Jennison.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.ism.ac.jp%2Fismlib%2Fsoft_e.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.ism.ac.jp/ismlib/soft_e.html">
+                                    <div class="site-title">ISMLIB Software </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Institute of Statistical Mathematics Software and Data Library.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fqed.econ.queensu.ca%2Fpub%2Ffaculty%2Fmackinnon%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://qed.econ.queensu.ca/pub/faculty/mackinnon/">
+                                    <div class="site-title">James MacKinnon </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran codes for cointegration tests and other time series topics.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fdge.repec.org%2Fcodes%2Fhpfilter.for" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://dge.repec.org/codes/hpfilter.for">
+                                    <div class="site-title">Kalman smoothing routine for Hodrick-Prescott filter </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    By E. Prescott.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.math.sci.hiroshima-u.ac.jp%2F%7Em-mat%2FMT%2FVERSIONS%2FFORTRAN%2Ffortran.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/VERSIONS/FORTRAN/fortran.html">
+                                    <div class="site-title">Mersenne Twister in Fortran </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Random number generators in Fortran.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww4.stat.ncsu.edu%2F%7Emonahan%2Faug00%2Ftoc.htm" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www4.stat.ncsu.edu/~monahan/aug00/toc.htm">
+                                    <div class="site-title">Monahan statistics code </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran 95 code for the book Numerical Methods of Statistics, by John Monahan
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fmerlot.stat.uconn.edu%2F%7Emhchen%2Fmcbook%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://merlot.stat.uconn.edu/~mhchen/mcbook/">
+                                    <div class="site-title">Monte Carlo Methods in Bayesian Computation </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran 77 code to accompany book by Ming-Hui Chen, Qi-Man Shao, and Joseph G. Ibrahim.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.esg.montana.edu%2Feguchi%2Fmultivariate%2F%23Fortran" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.esg.montana.edu/eguchi/multivariate/#Fortran">
+                                    <div class="site-title">Multivariate Analyses </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran 90 codes for univariate and multivariate random number generation, computation of simple statistics, covariance matrices, principal components analysis, multiple regression, and jacknife cross-validation, by Dan Hennen.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.jstatsoft.org%2Fv06%2Fi08%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.jstatsoft.org/v06/i08/">
+                                    <div class="site-title">Multivariate Normal and Multivariate t Integrals Over Convex Regions </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran 90 code by Paul N. Somerville, appearing in the Journal of Statistical Software volume 3.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.biostat.uni-hannover.de%2Fstaff%2Fbretz%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.biostat.uni-hannover.de/staff/bretz/">
+                                    <div class="site-title">Multivariate normal or t-probabilities </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran and SAS/IML programs by Frank Bretz.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fhesperia.gsfc.nasa.gov%2F%7Eschmahl%2Fnnls%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://hesperia.gsfc.nasa.gov/~schmahl/nnls/">
+                                    <div class="site-title">Non-Negative Least Squares (NNLS) </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Codes in Fortran 77, 90, C, IDL, and Matlab.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.mpipks-dresden.mpg.de%2F%7Etisean%2FTISEAN_2.1%2Findex.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.mpipks-dresden.mpg.de/~tisean/TISEAN_2.1/index.html">
+                                    <div class="site-title">Nonlinear Time Series Analysis (TISEAN) </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Code in C and Fortran for the analysis of time series with methods based on the theory of nonlinear deterministic dynamical systems (chaos).
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww1.fpl.fs.fed.us%2Fnonpar.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www1.fpl.fs.fed.us/nonpar.html">
+                                    <div class="site-title">NONPAR: Nonparametric Estimation Program </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Calculates nonparametric estimates of percentiles, associated confidence intervals, and tolerance limits of the percentiles from a data set. Also calculates the order statistics needed for any sample size to create the same estimates. Includes source code and web-based interfaces for executing the programs.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fqed.econ.queensu.ca%2Fjae%2F1997-v12.2%2Fkadiyala-karlsson%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://qed.econ.queensu.ca/jae/1997-v12.2/kadiyala-karlsson/">
+                                    <div class="site-title">Numerical Methods for Estimation and Inference in Bayesian VAR-models </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran 77 code for paper by K. Rao Kadiyala and Sune Karlsson.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.netlib.org%2Fodrpack%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.netlib.org/odrpack/">
+                                    <div class="site-title">ODRPACK </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Solves the weighted orthogonal distance regression problem to find parameter estimates that minimize the sum of the squares of the weighted orthogonal distances between each observed data point and the curve described by a nonlinear equation. Includes documentation, revision history, and source code.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.stat.colostate.edu%2F%7Emielke%2Fpermute.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.stat.colostate.edu/~mielke/permute.html">
+                                    <div class="site-title">Permutation Methods: A Distance Function Approach </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Code for book by Paul W. Mielke Jr. and Kenneth J. Berry.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.stats.bris.ac.uk%2F%7Epeter%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.stats.bris.ac.uk/~peter/">
+                                    <div class="site-title">Peter Green </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Links to AutoRJ for reversible jump MCMC, Nmix for Bayesian analysis of univariate normal mixtures by MCMC, Cpt for Bayesian multiple change point analysis for point processes, and Dirichlet tessellation software.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.swarthmore.edu%2FNatSci%2Fpeverso1%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.swarthmore.edu/NatSci/peverso1/">
+                                    <div class="site-title">Phil Everson research </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    TLNise: Two-Level Normal independent sampling estimation. Rcwish generates random draws from the Wishart and related distributions.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.jstatsoft.org%2Fv02%2Fi05%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.jstatsoft.org/v02/i05/">
+                                    <div class="site-title">PIRLS </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Poisson Iteratively Reweighted Least Squares Program for Additive, Multiplicative, Power, and Non-linear Models, by Leif E. Peterson, Journal of Statistical Software v2 (1997).
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww1.fpl.fs.fed.us%2Fpsconf.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www1.fpl.fs.fed.us/psconf.html">
+                                    <div class="site-title">Predictor Sort Confidence Interval Simulation </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Performs a simulation to evaluate the performance of corrected confidence intervals based on blocked and unblocked ANOVAs in a predictor sort sampling ANOVA. Also estimates coverages for confidence intervals based on an analysis of covariance, and for confidence intervals based on uncorrected blocked and unblocked ANOVAs.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.public.iastate.edu%2F%7Evardeman%2Fstat531%2F531software.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.public.iastate.edu/~vardeman/stat531/531software.html">
+                                    <div class="site-title">Quality Control and Engineering Statistics code </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    For a course, authored by Karen Jensen, F. F. Gan, Stephen Crowder, Thomas Lorenzen, Keith Crawford, Andy Chiang, and Brandon L. Paris.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.stat.rice.edu%2F%7Eschwalb%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.stat.rice.edu/~schwalb/">
+                                    <div class="site-title">Quantiles of the Multivariate Studentized Range Procedure </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    By Otto Schwalb.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.fortran.com%2Fkiss.f90" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.fortran.com/kiss.f90">
+                                    <div class="site-title">Random Number Generator </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    KISS RNG by George Marsaglia
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww1.fpl.fs.fed.us%2Fglm.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www1.fpl.fs.fed.us/glm.html">
+                                    <div class="site-title">Raw General Linear Model Code </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Code for linear model hypothesis testing and power calculations via the singular value decomposition.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.itl.nist.gov%2Fdiv898%2Fsoftware%2Frecipe%2Fhomepage.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.itl.nist.gov/div898/software/recipe/homepage.html">
+                                    <div class="site-title">Recipe: REGression Confidence Intervals for PErcentiles </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Determines one-sided tolerance limits (in particular, A- and B-basis material property values) for regression models in the presence of between-batch variability. By Mark Vangel.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.ncdc.noaa.gov%2Fpaleo%2Fsoftlib%2Fredfit%2Fredfit.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.ncdc.noaa.gov/paleo/softlib/redfit/redfit.html">
+                                    <div class="site-title">RedFit </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran 90 code by Michael Schulz and Manfred Mudelsee to estimate red-noise spectra directly from unevenly spaced time series, without requiring interpolation.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fholocene.meteo.psu.edu%2FMann%2Ftools%2Ftools.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://holocene.meteo.psu.edu/Mann/tools/tools.html">
+                                    <div class="site-title">Research Tools Developed by the Mann Group </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran 77 code for the Mann and Lees Multi-Taper Method (MTM) and Mann and Park MTM-SVD Multivariate Signal Analysis.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.homepages.ucl.ac.uk%2F%7Eucakarc%2Fwork%2Findex.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.homepages.ucl.ac.uk/~ucakarc/work/index.html">
+                                    <div class="site-title">Richard Chandler's software </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran 77 code for random number generation (uniform, exponential, normal, binomial, poisson, geometric, gamma, beta, negative binomial and Weibull), and GLIMCLIM (Generalised Linear Modelling of daily climate sequences).
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.pa.msu.edu%2Fftp%2Fpub%2Fbeers%2Fposts%2Frostat%2Frostat.f" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.pa.msu.edu/ftp/pub/beers/posts/rostat/rostat.f">
+                                    <div class="site-title">Robust Estimation of Simple Statistics </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    By T. Beers, K. Flynn, and K. Gebhardt.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fpeople.virginia.edu%2F%7Esns5r%2Fresint%2Fimputstf%2Ffortran.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://people.virginia.edu/~sns5r/resint/imputstf/fortran.html">
+                                    <div class="site-title">Simulation of Multinomial Probit Probabilities and Imputation </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    By Steven Stern.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.stat.purdue.edu%2F%7Echong%2Fsoftware.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.stat.purdue.edu/~chong/software.html">
+                                    <div class="site-title">Smoothing Splines </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    RKPACK and RKPACK-II are collections of RATFOR (rational FORTRAN) routines by Chong Gu for Gaussian regression using smoothing splines, penalized likelihood density and hazard estimation.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=ftp%3A%2F%2Fftp.cs.monash.edu.au%2Fsoftware%2Fsnob%2FSnob.README" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="ftp://ftp.cs.monash.edu.au/software/snob/Snob.README">
+                                    <div class="site-title">SNOB </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Mixture modelling by Minimum Message Length (MML).
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.econ.duke.edu%2F%7Eget%2Fsnp.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.econ.duke.edu/~get/snp.html">
+                                    <div class="site-title">SNP: A Program for Nonparametric Time Series Analysis </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Code by A. Ronald Gallant and George Tauchen for nonparametric time series analysis that employs a Hermite polynomial series expansion to approximate the conditional density of a multivariate process.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fsabre.lancs.ac.uk%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://sabre.lancs.ac.uk/">
+                                    <div class="site-title">Software for the Analysis of Binary Recurrent Events (SABRE) </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran 77 code for the statistical analysis of multi-process random effect response data. These responses can take the form of binary, ordinal, count and linear recurrent events.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwwwmaths.anu.edu.au%2F%7Ebrent%2Frandom.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://wwwmaths.anu.edu.au/~brent/random.html">
+                                    <div class="site-title">Some Uniform and Normal Random Number Generators </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Two pseudorandom number generators, ranut and rannw, written in Fortran 77 by Richard P. Brent and released under the GNU General Public License.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww1.fpl.fs.fed.us%2Fsource.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www1.fpl.fs.fed.us/source.html">
+                                    <div class="site-title">Source Code for the Tight T Program </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Free program to determine appropriate sample sizes, allocate specimens, and analyze results in the case in which a response predictor is used to sort the specimens prior to treatment. Includes downloads for Solaris and DOS.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.spatial-statistics.com%2Fsoftware_index.htm" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.spatial-statistics.com/software_index.htm">
+                                    <div class="site-title">Spatial Statistics </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran 90 code by Kelley Pace.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Farchives.math.utk.edu%2Fsoftware%2Fmsdos%2Fnumerical.analysis%2Fspectr21%2F.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://archives.math.utk.edu/software/msdos/numerical.analysis/spectr21/.html">
+                                    <div class="site-title">SPECTRUM </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Analogue data is collected and digitized with an A/D converter. Having then a collection of digitized time series which reside in the computer, this program calculate amplitude density, autospectral (power) density and cross-spectral density functions from these input time series.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fastrostatistics.psu.edu%2Fstatcodes%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://astrostatistics.psu.edu/statcodes/">
+                                    <div class="site-title">StatCodes </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Metasite with links to source codes in Fortran and C implementing statistical methods which are freely available on the Internet. The codes are chosen for their potential utility for research in astronomy and other physical sciences.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.manfredmudelsee.com%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.manfredmudelsee.com/">
+                                    <div class="site-title">Statistical Analysis of Climate Time Series </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Codes by Manfred Mudelsee. PearsonT estimates Pearson’s correlation coefficient from serially dependent time series. Rampfit estimates ramp function regressions. TAUEST estimates persistence in unevenly spaced weather/climate time series. XTREND estimates trends in the occurrence rate of extreme weather and climate events.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.stat.osu.edu%2F%7Etjs%2F" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.stat.osu.edu/~tjs/">
+                                    <div class="site-title">Statistical programs </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Code for "Invariant Small Sample Confidence Intervals For The Difference Of Two Success Probabilities" and "Bootstrap Prediction and Confidence Bands: a Superior Statistical Method for Analysis of Gait Data", by Thomas Santner.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fmath.nyu.edu%2Fphd_students%2Fbarreiro%2Fprojects.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://math.nyu.edu/phd_students/barreiro/projects.html">
+                                    <div class="site-title">Stochastic Differential Equations </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran/Matlab program by Andrea Barreiro to integrate SDE's using Euler's method.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.itl.nist.gov%2Fdiv898%2Fsoftware%2Freeves%2Fhomepage.htm" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.itl.nist.gov/div898/software/reeves/homepage.htm">
+                                    <div class="site-title">STSPAC </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Fortran 77 code for statistics by Charlie Reeve, covering probability distributions, random number generation, least-squares calculations, and other topics.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                            <div class="site-item ">
+                                <div class="site-icon "><i class='siteIcon fa fa-file-text-o'></i></div>
+                                <div class="site-flag">
+                                  <a href="https://www.dmoz.org/public/flag?t=computers&amp;cat=Computers%2FProgramming%2FLanguages%2FFortran%2FSource_Code%2FStatistics_and_Econometrics&amp;url=http%3A%2F%2Fwww.census.gov%2Fsdms%2Fwww%2Fvwelcome.html" 
+                                     title="Report an issue with this listing"><i class='fa fa-flag'></i></a>
+                                </div>
+
+                                <div class="title-and-desc">
+                                  <a target="_blank" href="http://www.census.gov/sdms/www/vwelcome.html">
+                                    <div class="site-title">VPLX: Variance Estimation for Complex Samples </div>
+                                  </a>
+                                  <div class="site-descr ">
+			
+                                    Program from the U.S. Census Bureau for the calculation of variances for complex sample designs through replication.
+                                    <span class="content-type media-date"></span>
+                                  </div>
+                                </div>
+                            </div>
+		
+                        </div>
+        
+            </div>
+    </section>
+
+
+    <!---------- ALTERNATE LANGUAGES ---------->
+
+
+    <section class="results editors-and-mozzie">
+
+     <!---------- LIZARD ICON ---------->
+
+     <div class="custom-mozzie">
+       <img src="../../../../../../img/moz/puter.gif" width = 161 height = 83 alt="&#x005B;Computer Mozilla]">
+     </div>
+
+
+     <div class="edit-block">
+
+       <!---------- SHOW EDITORS and LAST UPDATE DATE ---------->
+
+        <div class="cat-editors">
+       	  
+        </div>
+
+        <!---------- LAST UPDATE DATE ---------->
+
+        <div class="last-update">
+
+          <div id="last-update-header" class="last-update-section"> Last update: </div>
+
+            <span class="last-update"><i class="fa fa-calendar"></i>January 5, 2017 at 11:45:04 UTC</span>
+
+        </div>
+     </div>
+  </section>  <!-- group editors and last update date with mozzie -->
+
+
+    <!---------- CATEGORIES ---------->
+
+
+
+    <section class="thundercats">
+      <div id="cat-slideshow" class="thundercats slideshow slidecount-15" >
+
+             <div class="category computers"
+                onClick="window.location.href='/Computers'"><div class="cat-label">Computers</div></div>
+
+             <div class="category games"
+                onClick="window.location.href='/Games'"><div class="cat-label">Games</div></div>
+
+             <div class="category health"
+                onClick="window.location.href='/Health'"><div class="cat-label">Health</div></div>
+
+             <div class="category home"
+                onClick="window.location.href='/Home'"><div class="cat-label">Home</div></div>
+
+             <div class="category news"
+                onClick="window.location.href='/News'"><div class="cat-label">News</div></div>
+
+             <div class="category recreation"
+                onClick="window.location.href='/Recreation'"><div class="cat-label">Recreation</div></div>
+
+             <div class="category reference"
+                onClick="window.location.href='/Reference'"><div class="cat-label">Reference</div></div>
+
+             <div class="category regional"
+                onClick="window.location.href='/Regional'"><div class="cat-label">Regional</div></div>
+
+             <div class="category science"
+                onClick="window.location.href='/Science'"><div class="cat-label">Science</div></div>
+
+             <div class="category shopping"
+                onClick="window.location.href='/Shopping'"><div class="cat-label">Shopping</div></div>
+
+             <div class="category society"
+                onClick="window.location.href='/Society'"><div class="cat-label">Society</div></div>
+
+             <div class="category sports"
+                onClick="window.location.href='/Sports'"><div class="cat-label">Sports</div></div>
+
+             <div class="category world"
+                onClick="window.location.href='/World'"><div class="cat-label">All Languages</div></div>
+
+             <div class="category arts"
+                onClick="window.location.href='/Arts'"><div class="cat-label">Arts</div></div>
+
+             <div class="category business"
+                onClick="window.location.href='/Business'"><div class="cat-label">Business</div></div>
+
+      </div>
+    </section>      
+
+
+    <!---------- ALT SEARCH ---------->
+
+    <section class="results alt-search">
+
+     <div class="alt-search">
+
+        <div class="search-on">
+           "<b>Computers ... Statistics and Econometrics</b>" search&nbsp;on:
+        </div>
+
+        <div class="alt-sites">
+	
+           <a href="http://search.aol.com/aol/search?query=Computers+Programming+Languages+Fortran+Source+Code+Statistics+and+Econometrics">AOL</a> -
+<a href="http://www.ask.com/web?q=Computers+Programming+Languages+Fortran+Source+Code+Statistics+and+Econometrics">Ask</a> -
+<a href="https://www.bing.com/search?q=Computers+Programming+Languages+Fortran+Source+Code+Statistics+and+Econometrics">Bing</a> -
+<a href="https://duckduckgo.com/?q=Computers+Programming+Languages+Fortran+Source+Code+Statistics+and+Econometrics">DuckDuckGo</a> -
+<a href="https://gigablast.com/search?q=Computers+Programming+Languages+Fortran+Source+Code+Statistics+and+Econometrics">Gigablast</a> -
+<a href="https://www.google.com/search?q=Computers+Programming+Languages+Fortran+Source+Code+Statistics+and+Econometrics">Google</a> -
+<a href="https://www.ixquick.com/do/search/?q=Computers+Programming+Languages+Fortran+Source+Code+Statistics+and+Econometrics">ixquick</a> -
+<a href="https://search.yahoo.com/search?p=Computers+Programming+Languages+Fortran+Source+Code+Statistics+and+Econometrics">Yahoo</a> -
+<a href="https://www.yandex.com/yandsearch?text=Computers+Programming+Languages+Fortran+Source+Code+Statistics+and+Econometrics">Yandex</a> -
+<a href="http://new.yippy.com/search?query=Computers+Programming+Languages+Fortran+Source+Code+Statistics+and+Econometrics">Yippy</a>  				
+        
+      </div>
+    </section>
+
+
+  <!---------- FOOTER ---------->
+
+    <footer>
+        <div class="copyright">
+            Copyright &copy; 1998-2017 AOL Inc.
+        </div>
+        
+        <div class="terms">
+            <a class="terms-of-use" href="https://www.dmoz.org/docs/en/termsofuse.html">Terms of Use</a>
+        </div>  
+
+        <div class="build">
+            <p>Built by <a href="https://www.dmoz.org/docs/en/cmbuild.html">CMBuild</a></p>
+        </div>
+    </footer>
+
+
+<script type="text/javascript">
+
+  bN_cfg =
+  {
+    h: location.hostname
+  };
+
+  function runOmni()
+  {
+    s_265.pfxID="dmoz";
+    s_265.pageName="nodeviewer.jsp";
+    s_265.channel="us.dmozodp";
+    s_265.linkInternalFilters="javascript:,dmoz.org";
+    s_265.prop1="browse : computers";
+    s_265.prop2="depth : 6";
+    s_265.prop16="en";
+    s_265.prop54="no_cms";
+    s_265.prop62="video_novideo";
+    s_265.prop65="original_content";
+    s_265.mmxgo=true;
+
+    var s_code=s_265.t();
+  }
+
+  s_265_account ="aolsvc";
+
+  (function(){
+    var d = document, s = d.createElement('script');
+    s.type = 'text/javascript';
+    s.src = (location.protocol == 'https:' ? 'https://s' : 'http://o') + '.aolcdn.com/os_merge/?file=/aol/beacon.min.js&file=/aol/omniture.min.js';
+    d.getElementsByTagName('head')[0].appendChild(s);
+  })();
+</script>
+
+
+</div>  <!-- close div id=page -->
+
+</body>
+</html>
+
